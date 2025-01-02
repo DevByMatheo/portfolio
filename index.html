@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Google font-->
+        <!--font-family: "EB Garamond", serif;-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!--font-family: "Raleway", sans-serif;-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+        <!--font-family: "Orbitron", sans-serif;-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Orbitron:wght@400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    
+    </head>
+
+    <body>
+        <section class="top-page">
+            <header class="header">
+                <img src="medias/logo.png" alt="Logo du site">
+                <nav class="nav">
+                    <li>Accueil</li>
+                    <li>Profil</li>
+                    <li>Compétences</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </nav>
+            </header>
+            <div class="landing-page">
+                <h1 class="big-title">VOUS RECHERCHEZ UN <br> DEVELOPPEUR ?</h1>
+                <div class="separateur"></div>
+                <p>En tant que développeur, je vous aide à concrétiser vos idées avec des solutions sur mesure, performantes et modernes. 
+                    <br>Passionné par la technologie et expert en développement web, je suis prêt à transformer vos idées en réalité.
+                </p>
+            </div>
+        </section>
+
+        <section class="profil">
+            <div class="aboutme">
+                <h1>A propos de moi</h1>
+                <p>Salut, je m'appelle Mathéo et je suis passioné par la programmation, j'ai travaillé en autodidacte par l'intermédiaire de formation en ligne afin de développer mes propres projets.<br> 
+                    <br>Je m'interesse désormais au développement <b>web</b> et je propose mes services personnalisés pour des missions freelance.</p>
+            </div>
+            <div class="formation">
+                <h1>Formation</h1>
+                <img src="medias/debut.png">
+                <div class="menu-formation">
+                    <div class="elmt-btn">
+                        <button class="bouton" onclick="toggleFormations(1, this)"><span>Passion pour l'informatique</span> <span>2020-2021</span></button>
+                    </div>
+                    <div id="formation1" class="formation-content">
+                        <div class="text-formation-content">
+                            <p>Pendant le confinement, je me suis passionné pour l'informatique. 
+                                J'ai commencé avec Linux, en explorant notamment Arch Linux, puis j'ai suivi une formation en cybersécurité où j'ai appris les outils de Kali Linux. 
+                                J'ai aussi commencé à programmer en Python et à maîtriser les bases du web avec HTML/CSS. </p>
+                        </div>
+                    </div>
+                
+                    <div class="elmt-btn">
+                        <button class="bouton" onclick="toggleFormations(2, this)"><span>BAC GEN NSI</span> <span>2025</span></button>
+                        
+                    </div>
+                    <div id="formation2" class="formation-content">
+                        <div class="text-formation-content">
+                            <p>Au cours de ma formation en terminale avec l'option NSI (Numérique et Sciences Informatiques), 
+                                j’ai pu approfondir mes compétences en Python et découvrir le SQL. </p>
+                        </div>
+                    </div>
+                
+                    <div class="elmt-btn">
+                        <button class="bouton" onclick="toggleFormations(3, this)"><span>A suivre</span> <span>...</span></button>
+                    </div>
+                    <div id="formation3" class="formation-content">
+                        <div class="text-formation-content">
+                            <p>Pour ma prochaine étape, je souhaite poursuivre mes études dans le domaine de l'informatique. 
+                                Mon objectif est de développer des compétences avancées en programmation et en gestion de systèmes pour me spécialiser dans ce secteur qui me passione tant.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="competences">
+        </section>
+    
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>
