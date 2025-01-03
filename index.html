@@ -27,29 +27,37 @@
     </head>
 
     <body>
-        <section class="top-page">
-            <header class="header">
-                <img src="medias/logo.png" alt="Logo du site">
-                <nav class="nav">
-                    <li>Accueil</li>
-                    <li>Profil</li>
-                    <li>Compétences</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
-                </nav>
-            </header>
-            <div class="landing-page">
-                <h1 class="big-title">VOUS RECHERCHEZ UN <br> DEVELOPPEUR ?</h1>
-                <div class="separateur"></div>
-                <p>En tant que développeur, je vous aide à concrétiser vos idées avec des solutions sur mesure, performantes et modernes. 
+        <header class="header">
+            <img src="medias/logo.png" alt="Logo du site">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="top-page" style="z-index: -2; position: relative;">
+            <canvas class="background-canvas"></canvas>
+            <div class="landing-page" id="accueil">
+                <h1 class="big-title" style="z-index: 1;">VOUS RECHERCHEZ UN <br> DEVELOPPEUR ?</h1>
+                <div class="separateur" style="z-index: 1;"></div>
+                <p style="font-size: 30px; z-index: 1;">En tant que développeur, je vous aide à concrétiser vos idées avec des solutions sur mesure, performantes et modernes. 
                     <br>Passionné par la technologie et expert en développement web, je suis prêt à transformer vos idées en réalité.
                 </p>
             </div>
+            
+            <div class="scroll-arrow">
+                <img src="https://img.icons8.com/?size=100&id=26139&format=png&color=ffffff">
+            </div>
+            
         </section>
 
-        <section class="profil">
+        <section class="profil" id="profil">
             <div class="aboutme">
-                <h1>A propos de moi</h1>
+                <h1 style="font-size: 30px;">A propos de moi</h1>
                 <p>Salut, je m'appelle Mathéo et je suis passioné par la programmation, j'ai travaillé en autodidacte par l'intermédiaire de formation en ligne afin de développer mes propres projets.<br> 
                     <br>Je m'interesse désormais au développement <b>web</b> et je propose mes services personnalisés pour des missions freelance.</p>
             </div>
@@ -92,11 +100,18 @@
             </div>
         </section>
 
-        <section class="competences">
+        <section class="skills" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-grid">
+              <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=D2Hi2VkJSi33&format=png&color=000000"><span>HTML</span></div>
+              <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=YjeKwnSQIBUq&format=png&color=000000"><span>CSS</span></div>
+              <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=gYCTehfTlYk5&format=png&color=000000"><span>JavaScript</span></div>
+              <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=YX03OUiHE3rz&format=png&color=000000"><span>Python</span></div>
+              <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=8verEw3iUvx0&format=png&color=000000"><span>Git</span></div>
+            </div>
         </section>
-    
-
-        <script src="js/script.js"></script>
+        
+    <script src="js/script.js"></script>
     </body>
 
 </html>
