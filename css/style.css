@@ -256,3 +256,14 @@ section.skills {
 .skill-card img {
     width: 50px;
 }
+
+
+.portfolio, .contact {
+    background-color: rgb(23, 23, 23);
+}
+
+/* Portfolio */
+
+
+
+/* Contact */
