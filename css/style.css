@@ -84,7 +84,16 @@ section.top-page > :not(header.header) {
     font-family: "Raleway", sans-serif;
 }
 
-div.separateur {
+div.cover{
+    color: lightgray;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+
+div.first-separateur {
+    margin-top: 50px;
     height: 1px;
     width: 150px;
     background-color: white;
@@ -95,7 +104,6 @@ div.separateur {
 
 .landing-page p {
     color: white;
-    font-size: 23px;
     text-align: center;
     margin-top: 3%;
     margin-bottom: 0;
@@ -112,6 +120,7 @@ div.separateur {
 /* Profil */
 
 .profil {
+    background-color: #1A191E; 
     display: flex;
     justify-content: space-between;
     position: relative; 
@@ -169,7 +178,7 @@ div.separateur {
     cursor: pointer;
     border: none;
     text-align: center;
-    background-color: #5B2C6F;
+    background-color: #202B38;
     color: white;
     margin-bottom: 10px;
     font-family: "Orbitron", "Raleway", sans-serif;
@@ -177,13 +186,13 @@ div.separateur {
 }
 
 .formation .bouton:hover {
-    background-color: #9B59B6;
+    background-color: #2B384A;
 }
 
 .formation-content {
     display: none;
     margin-bottom: 30px;
-    background-color: #3E1F47;
+    background-color: #1C232F;
     width: 100%;
     height: 100px;
     border-radius: 10px;
@@ -199,7 +208,11 @@ div.separateur {
     margin-top: 5px;
     padding: 10px;
     font-size: 15px;
-    
+    max-width: 100%;
+    white-space: normal;      
+    overflow-wrap: break-word; 
+    word-break: break-word;    
+    box-sizing: border-box;  
 }
 
 .elmt-btn span {
@@ -207,16 +220,16 @@ div.separateur {
 }
 
 section.profil {
-    height: 55vh;
+    height: 60vh;
 
 }
 
 /* skills */
 
 section.skills {    
-    min-height: 55vh; 
+    min-height: 40vh; 
     height: auto; 
-    background: linear-gradient(to bottom, #1A191E, rgb(23, 23, 23));
+    background: linear-gradient(to bottom, #1A191E 5%, rgb(23, 23, 23));
 }
 
 .skills h1 {
@@ -236,7 +249,7 @@ section.skills {
 }
 
 .skill-card {
-    background-color: #5B2C6F;
+    background-color: #202B38;
     border-radius: 10px;
     padding: 20px;
     text-align: left;
@@ -246,6 +259,7 @@ section.skills {
 
 .skill-card:hover {
     transform: scale(1.1);
+    background-color: #2B384A;
 }
 
 .skill-card h3 {
@@ -278,12 +292,116 @@ h3 .icon {
 
 /* Portfolio */
 .portfolio {
-    background-color:  #5B2C6F;
+    background: linear-gradient(to bottom, rgb(23, 23, 23) 2%, #202B38 100%);
+    height: 100vh
+}
+
+.portfolio h1 {
+    margin-top: 0;
+    padding-top: 15px;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 30px;
 }
 
 
 
 /* Contact */
 .contact {
-    background-color: rgb(23, 23, 23);
+    background-color: #202B38;
+    height: 100%;
+    padding: 0 0 20px 0; 
 }
+
+.contact h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+div.second-separateur {
+    margin: 25px auto 0 auto;
+    height: 1px;
+    width: 150px;
+    background-color: white;
+
+}
+
+.contact img{
+    width: 70px;
+    padding: 10px;
+}
+
+.ul-contact{
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+
+.ul-contact li { 
+    display:inline;
+}
+
+.ul-contact li a { 
+    color:white; 
+    margin: 0 12px;
+}
+
+.social_contact_ul {
+    display: table; 
+    margin: 15px auto 0 auto;
+     list-style-type: none;  
+}
+
+.social_contact_ul li { 
+    padding-left: 20px; 
+    padding-top: 10px; 
+    float: left; 
+}
+
+.social_contact_ul li a { 
+    color:white; 
+    border: 1px solid white; 
+    padding: 8px;
+    border-radius: 50%;
+}
+.social_contact_ul li i {  
+    width: 20px; 
+    height: 20px; 
+    text-align: center;
+}
+
+.container_contact p {
+    color: white;
+}
+
+.td-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+@media (max-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
