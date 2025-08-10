@@ -74,6 +74,11 @@ section.top-page > :not(header.header) {
     display: block; 
 }
 
+.navbar a:hover{
+    color: white;
+    text-decoration: none;
+}
+
 /* Accueil */
 
 .big-title {
